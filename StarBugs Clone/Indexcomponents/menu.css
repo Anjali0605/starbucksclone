@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --light-green:rgb(13, 73, 13);
+    /* --dark-green:rgb(3, 58, 3); */
+    --grey-text:rgb(46, 45, 45);
+    --black-text:black;
+    --white-text:white;
+    --h1-font-size: 42px;
+    --h2-font-size:32px;
+    --p1-font-size:22px;
+    --p2-font-size:18px;
+    --gray-bg-color: rgb(194, 192, 192);
+    --light-green-background:#cfe6b5;
+    --dark-green:rgb(5, 54, 5);
+}
+
+.menu-data{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background-color: var(--white-text);
+}
+.menu-data .menu-nav{
+    padding: 10px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    left:0;
+    width: 25%;
+}
+.menu-data .menu-nav > div{
+    padding: 20px 20px;
+    gap:20px;
+}
+.menu-data .menu-nav > div h2{
+    font-size: var(--h2-font-size);
+    color:var(--black-text);
+    margin-bottom: 20px;
+    
+}
+.menu-data .menu-nav > div ul{
+    list-style: none;
+
+}
+.menu-data .menu-nav > div ul button{
+    border: none;
+    padding: 10px;
+    text-align: left;
+    background-color:var(--white-text);
+    cursor: pointer;
+    color: var(--grey-text);
+    font-size: var(--p2-font-size);
+}
+
+
+/* Menu-Container */
+.menu-container{
+    padding:30px 30px;
+    margin: 0;
+    /* border: 2px solid black; */
+    width:75%;
+   
+}
+.menu-container > h1{
+    padding: 30px 30px;
+    font-size: var(--h1-font-size);
+    color: var(--black-text);
+}
+.menu-container > div >h2{
+    padding: 20px 20px;
+    color: var(--black-text);
+    font-size: var(--h2-font-size);
+}
+
+.menu-container > div > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:70%
+}
+.menu-container > div > div >div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.menu-container > div > div >div >img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+.menu-container > div > div >div >span{
+    color: var(--grey-text);
+    font-size: var(--p1-font-size);
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .menu-data{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-data .menu-nav{
+        display: block;
+        width: 100%;
+    }
+    .menu-container > div > div{
+        display: block;
+    }
+    .menu-container > div > div >div{
+    display: block;
+    width:50%;
+    text-align: center;
+    }
+  
+}

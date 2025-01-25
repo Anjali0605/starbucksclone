@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="signin.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f3f1;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e3932;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #00754a;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #00754a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005c37;
+}
+
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #00754a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <title>Sign In : Starbucks Sign In</title>
+</head>
+<body>
+    <div class="sign-in-container">
+        <div class="form-card">
+            <div class="logo">
+                <img src="../Images/logo.jpeg" alt="Starbucks Logo">
+            </div>
+            <h2>Sign In to Your Account</h2>
+            <form id="signInForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign In</button>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot your password?</a>
+                    <span> | </span>
+                    <a href="#">Create an account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("signInForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Retrieve form data
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Validate form data
+    if (email === "" || password === "") {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Simulate successful sign-in
+    alert(`Welcome back, ${email.split("@")[0]}!`);
+    // Redirect to another page or perform other actions
+});
+
+    </script>
+</body>
+</html>

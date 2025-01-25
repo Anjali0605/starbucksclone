@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Images/logo.jpeg" type="image/x-icon">
+  <title>Join Now : Starbucks Sign Up</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f3f3f1;
+    }
+
+    .signup-container {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .signup-container img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #1e3932;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input:focus {
+      border-color: #00754a;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background: #00754a;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #005c37;
+    }
+
+    .links {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #00754a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <img src="../Images/logo.jpeg" alt="Starbucks Logo">
+    <h2>Create Your Account</h2>
+    <form id="signUpForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <div class="links">
+      <p>Already have an account? <a href="#">Sign In</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("signUpForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Retrieve form values
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Validate fields
+      if (firstName === "" || lastName === "" || email === "" || password === "" || confirmPassword === "") {
+        alert("Please fill out all fields.");
+        return;
+      }
+
+      if (!email.includes("@") || !email.includes(".")) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return;
+      }
+
+      // Simulate successful sign-up
+      alert(`Welcome, ${firstName}! Your account has been created.`);
+    });
+  </script>
+</body>
+</html>

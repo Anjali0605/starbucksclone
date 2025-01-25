@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --light-green:rgb(13, 73, 13);
+    /* --dark-green:rgb(3, 58, 3); */
+    --grey-text:rgb(46, 45, 45);
+    --black-text:black;
+    --white-text:white;
+    --h1-font-size: 42px;
+    --h2-font-size:32px;
+    --p1-font-size:22px;
+    --p2-font-size:18px;
+    --gray-bg-color: rgb(194, 192, 192);
+    --light-green-background:#cfe6b5;
+    --dark-green:rgb(5, 54, 5);
+}

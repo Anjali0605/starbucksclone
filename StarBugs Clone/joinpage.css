@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --light-green:rgb(13, 73, 13);
+    /* --dark-green:rgb(3, 58, 3); */
+    --grey-text:rgb(46, 45, 45);
+    --black-text:black;
+    --white-text:white;
+    --h1-font-size: 42px;
+    --h2-font-size:32px;
+    --p1-font-size:22px;
+    --p2-font-size:18px;
+    --gray-bg-color: rgb(194, 192, 192);
+    --light-green-background:#cfe6b5;
+    --dark-green:rgb(5, 54, 5);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--white-text);
+    color:var(--black-text);
+    border-bottom: 2px solid var(--grey-text);
+}
+/* Styiling for left navigation list */
+#nav_left_ul, #nav_right_ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav_left_ul li{
+    margin-right: 20px;
+
+}
+#nav_left_ul a{
+    text-decoration: none;
+    color: var(--grey-text);
+    font-weight: bold;
+    font-size: var(--p1-font-size);
+    /* margin-top: 30px; */
+}
+#nav_left_ul a:hover{
+    color:var(--light-green);
+}
+#nav_left_ul img{
+    height: 40px;
+    width:auto;
+}
+/* styinling for right navigation */
+#nav_right_ul li{
+    margin-left: 40px;
+}
+#nav_right_ul a{
+    text-decoration: none;
+    color: var(--grey-text);
+    font-weight: bold;
+    font-size: var(--p1-font-size);
+}
+/* Button Styiling */
+#sign_in, #join_now{
+    background-color: var(--light-green);
+    border: none;
+    padding: 10px 17px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor:pointer;
+    transition: var(--light-green) 0.3s ease;
+}
+#sign_in:hover, #join_now:hover{
+    background-color: var(--dark-green);
+}
+#menu_icon{
+    display: none;
+}
+#location:hover a{
+    color: var(--light-green);
+}
+
+/* Module responsiveness */
+@media (max-width:700px){
+  
+    #nav_left_ul a,
+    #location{
+       display: none;
+    }
+
+    #menu_icon{
+        display: block;
+    }
+
+}
+@media (max-width:300px){
+    #nav_right_ul a,
+    #nav_right_ul button{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,197 @@
+:root {
+    --light-green:rgb(13, 73, 13);
+    
+    --grey-text:rgb(46, 45, 45);
+    --black-text:black;
+    --white-text:white;
+    --h1-font-size: 42px;
+    --h2-font-size:32px;
+    --p1-font-size:22px;
+    --p2-font-size:18px;
+    --gray-bg-color: rgb(194, 192, 192);
+    --light-green-background:#cfe6b5;
+    --dark-green:rgb(5, 54, 5);
+  }
+
+
+
+.container{
+    padding:30px 30px;
+    margin: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border-bottom: 0.5px solid var(--grey-text);
+}
+
+/* div 1 */
+.div1{
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.div1 .content_container,.img_container{
+    width: 50%;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+
+
+/* div2 */
+.div2{
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.div2 .content_container,.img_container{
+    width: 50%;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+
+
+/* div3 */
+.div3{
+    padding: 10px 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.div3 .content_container,.img_container{
+    width: 50%;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+
+/* Container Images of all divs */
+.img_container img{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Content Container of all divs */
+.content_container{
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 30px;
+    background-color:var(--light-green-background);
+}
+.content_container h1{
+    font-size: var(--h1-font-size);
+    color: var(--dark-green);
+
+}
+.content_container p{
+    font-size: var(--p1-font-size);
+    color: var(--dark-green);
+
+}
+.content_container button{
+    font-size: var(--p1-font-size);
+    color: var(--dark-green);
+    padding:20px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container1{
+    background-color: var(--light-green-background);
+}
+
+/* Container 1 Ends */
+
+/* Container 2 */
+.container2{
+    justify-content: center;
+    align-items: center;
+    font-size: var(--p1-font-size);
+    color: var(--grey-text);
+    padding:40px 200px;
+    text-align: center;
+    border-bottom: 2px solid var(--grey-text);
+}
+
+
+/* container 3 */
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* border-bottom: 2px solid var(--grey-text); */
+    height: fit-content;
+    min-height: 300px;
+}
+
+.container3 > div {
+    width: 25%; /* Sets each div to 25% width */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+    padding: 10px; /* Optional: adds some padding for better spacing */
+    height: 200px;
+    padding-top: 15px;
+  }
+  .container3 > div ul li{
+    list-style: none;
+    text-decoration: none;
+    line-height: 30px;
+  }
+  .container3 > div ul li a{
+    text-decoration: none;
+    color:var(--grey-text);
+    font-size: var(--p2-font-size);
+    
+  }
+  .container3 > div h2{
+    margin-bottom: 20px;
+    color:var(--black-text);
+  }
+
+
+
+  /* footer */
+  .footer{
+    height:75px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .footer a i{
+    padding: 10px 10px;
+    color: var(--grey-text);
+  }
+
+  @media screen and (max-width: 500px) {
+    .container3 {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .container3 > div {
+        width: 100%; 
+        padding: 15px; 
+        height: auto;
+    }
+    .container1 > div{
+        display: block;
+        
+    }
+    .container > * {
+        margin: 0;
+        padding: 0;
+    }
+}

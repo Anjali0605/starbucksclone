@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../joinpage.css">
+    <link rel="stylesheet" href="../main_page_container.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Menu : Starbucks Coffee Company</title>
+   
+    
+</head>
+<body>
+    <nav>
+        <ul id="nav_left_ul">
+            <li id="logo"><img src="../Images/logo.jpeg" alt=""></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./rewards.html">Rewards</a></li>
+        
+        </ul>
+        <ul id="nav_right_ul">
+            <li id="location"><a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z"> 🌎 Find a Store</a></li>
+            <li><a href="../signIn.html"><button id="sign_in">Sign In</button></a></li>
+            <li><a href="../joinNow.html"><button id="join_now">Join Now</button></a></li>
+            <li id="menu_icon"><a href="#menu_icon">☰</a></li>
+        </ul>
+       </nav>
+
+<div class="menu-data">
+    <div class="menu-nav">
+        <div class="drinks">
+            <h2>Drinks</h2>
+            <ul>
+                <li><button onclick="showItems('hot-coffee')">Hot Coffees</button></li>
+                <li><button onclick="showItems('cold-coffee')">Cold Coffees</button></li>
+                <li><button onclick="showItems('starbucks-refreshes-beverages')">Starbucks Refreshers Beverages</button></li>
+                <li><button onclick="showItems('frappuccino-blended-beverages')">Frappuccino® Blended Beverages</button></li>
+                
+            </ul>
+        </div>
+        <div class="food">
+            <h2>Food</h2>
+            <ul>
+                <li><button onclick="showItems('breakfast')">Breakfast</button></li>
+                <li><button onclick="showItems('bakery')">Bakery</button></li>
+                <li><button onclick="showItems('treats')">Treats</button></li>
+               
+            </ul>
+        </div>
+        <div class="at-home-coffee">
+            <h2>At Home Coffee</h2>
+            <ul>
+                <li><button onclick="showItems('whole-beans')">Whole Beans</button></li>
+                <li><button onclick="showItems('via-instant')">VIA Instant</button></li>
+            </ul>
+        </div>
+        <div class="merchandice">
+            <h2>Merchandice</h2>
+            <ul>
+            <li><button onclick="showItems('cold-cups')">Cold Cups</button></li>
+              </ul>
+        </div>
+    </div>
+    <div class="main_menu_container">
+    <div class="menu-container " id="hot-coffee">
+        <h1>Hot Coffees</h1>
+        <div class="item-list">
+            <h2>Cortados</h2>
+            <div class="cortados">
+                
+                <div class="cortado">
+                    <img src="../Images/hot_coffe1.jpeg" alt="Cortado">
+                    <span>Cortado</span>
+                </div>
+                <div class="brown_sugar_oatmilk_cortado">
+                    <img src="../Images/hot_coffe2.jpeg" alt="Brown Sugar Cortado">
+                    <span>Brown Sugar<br> Oatmilk Cortado</span>
+                </div>
+            </div>
+            <h2>Americanos</h2>
+            <div class="americanos">
+                
+                <div class="caffe_americano">
+                    <img src="../Images/hot_coffe3.jpeg" alt="Caffe Americano">
+                    <span>Caffee Americano</span>
+                </div>
+            </div>
+            <h2>Bewered Coffees</h2>
+            <div class="bewered_coffees">
+                <div class="single_origin_ethiopia">
+                    <img src="../Images/hot_coffe4.jpeg" alt="Single-Origin Ethiopia">
+                    <span>Single-Origin Ethiopia</span>
+                </div>
+                <div class="featured_dark_roast">
+                    <img src="../Images/hot_coffe5.jpeg" alt="Featured Dark Roast">
+                    <span>Featured Dark Roast</span>
+                </div>
+            </div>
+        </div></div>
+
+
+    <div class="menu-container" id="cold-coffee">
+        <h1>Cold Coffees</h1>
+        <div  class="item-list">
+            <h2>Cold Brews</h2>
+            <div class="cold-brews">
+                <div class="pistachio-cream-cold-brew">
+                    <img src="../Images/cold_coffee1.jpeg" alt="Pistachio Cream Cold Brew">
+                    <span>Pistachio Cream Cold Brew</span>
+                </div>
+                <div class="salted-caramel-cream-cold-brew">
+                    <img src="../Images/cold_coffe2.jpeg" alt="Salted Caramel Cream Cold Brew">
+                    <span>Salted Caramel Cream Cold Brew</span>
+                </div>
+                <div class="chocolate-cream-cold-brew">
+                    <img src="../Images/cold_coffe3.jpeg" alt="Chocolate Cream Cold Brew">
+                    <span>Chocolate Cream Cold Brew</span>
+                </div>
+                
+            </div>
+            <h2>Nitro Cold Brews</h2>
+            <div class="nitro-cold-brews">
+                <div class="vanilla-sweet-cream-nitro-cold-brew">
+                    <img src="../Images/cold_coffe4.jpeg" alt="Vanlla Sweet Cream Nitro Brew">
+                    <span>Vanilla Sweet Nitro Cold Brew</span>
+                </div>
+                <div class="nitro-cold-brew">
+                    <img src="../Images/cold_coffe5.jpeg" alt="Nitro Cold Brew">
+                    <span>Nitro Cold Brew</span>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="menu-container" id="starbucks-refreshes-beverages">
+        <h1>Starbucks Refreshers Beverages</h1>
+        <div class="item-list">
+            <h2>Seasonal Exclusives</h2>
+            <div class="seasonal-exclusives">
+            <div class="cran-merry-orange-refresher">
+                <img src="../Images/seasonal-exclusives1.jpeg" alt="Cran-Merry Orange Refresher">
+                <span>Cran - Merry Orange Refresher</span>
+            </div>
+            <div class="cran-merry-drink">
+                <img src="../Images/seasonal-exclusives2.jpeg" alt="Cran-Merry Drink">
+                <span>Cran-Merry Drink</span>
+            </div>
+        </div>
+        </div>
+    </div>  
+    <div class="menu-container" id="frappuccino-blended-beverages">
+        <h1>Frappuccino Bended Beverages</h1>
+        <div class="item-list">
+            <h2>Coffee Frappuccino</h2>
+            <div class="coffee-frappuccino">
+                <div class="pistachio">
+                    <img src="../Images/coffeef1.jpeg" alt="Pistacho Frappuccino Blended Beverage">
+                    <span>Pistachio Frappuccino Blended Beverage</span>
+                </div>
+                <div class="caramel">
+                    <img src="../Images/coffeef2.jpeg" alt="Caramel Brullee Frappuccino Blended Beverage">
+                    <span>Caramel Brulee Frappuccino Blended Beverage</span>
+                </div>
+                <div class="chestnut">
+                    <img src="../Images/coffeef3.jpeg" alt="">
+                    <span>Chestnut Praline Frappuccino Blended Beverage</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-container" id="breakfast">
+        <h1>Breakfast</h1>
+        <div class="item-list">
+            <h2>Breakfast Sandwiches</h2>
+            <div class="breakfast-sandwiches">
+                <div class="egg">
+                    <img src="../Images/breakfasts.jpeg" alt="">
+                    <span>Egg. Pesto & Mozzarella Sandwitch </span>
+                </div>
+                <div class="bacon">
+                    <img src="../Images/breakfasts2.jpeg" alt="">
+                    <span>Bacon, Gouda & Egg Sandwitch</span>
+                </div>
+                <div class="doublw-smoked">
+                    <img src="../Images/breakfasts3.jpeg" alt="">
+                    <span>Double-Smoked Bacon, Cheddar & Egg Sandwitch</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-container" id="bakery">
+        <h1>Bakery</h1>
+        <div class="item-list">
+            <h2>Croissants & Danishes</h2>
+            <div class="croissants">
+            <div class="vanilla_bean">
+                <img src="../Images/croissants1.jpeg" alt="">
+                <span>Vanilla Bean Custored Danish</span>
+            </div>
+            <div class="turkey">
+                <img src="../Images/croissants2.jpeg" alt="">
+                <span>Turkey Sage Danish</span>
+            </div>
+            <div class="baked-apple">
+                <img src="../Images/croissants3.jpeg" alt="">
+                <span>Baked Apple Croissant</span>
+            </div>
+        </div>
+    </div></div>
+    <div class="menu-container" id="treats">
+        <h1>Treats</h1>
+        <div class="item-list">
+            <h2>Cake Pops</h2>
+            <div class="cake_pops">
+                <div class="valentine">
+                <img src="../Images/cake1.jpeg" alt="">
+                <span>Valentine Cake Pop</span>
+            </div>
+            <div class="birthday-cake">
+                <img src="../Images/cake2.jpeg" alt="">
+                <span>Birthday Cake Pop</span>
+            </div>
+            <div class="chocolate-cake-pop">
+                <img src="../Images/cake3.jpeg" alt="">
+                <span>Chocolate Cake Pop</span>
+            </div>
+        </div>
+    </div></div>
+    <div class="menu-container" id="whole-beans">
+        <h1>Whole Bean</h1>
+        <div  class="item-list">
+            <h2>Starbucks Reserve</h2>
+            <div class="starbucks-reserve">
+                <div class="sun-dried-ethiopia-west-arsi-packaged-coffee-whole-bean">
+                    <img src="../Images/whole_bean1.jpeg" alt="Sun-Dried Ethiopia Oromia West Arsi Packaged Coffee Whole Bean">
+                    <span>Sun-Dried Ethiopia West Arsi Packaged Coffee Whole Bean</span>
+                </div>
+                <div class="mexico-tenejapa-san-cristobal-packaged-coffee-whole-bean">
+                    <img src="../Images/cold_coffe2.jpeg" alt="Mexico Tenejapa San Cristobal Packaged Coffee Whole Bean">
+                    <span>Mexico Tenejapa San Cristobal Packaged Coffee Whole Bean</span>
+                </div>
+            </div>
+            </div></div>
+            <div class="menu-container" id="via-instant">
+                <h1>VIA Instant</h1>
+                <div class="item-list">
+                    <h2>Blonde Roast</h2>
+                    <div class="vis-veranda">
+                    
+                   <div class="via-vranda-blend">
+                        <img src="../Images/vranda.jpeg" alt="">
+                        <span>VIA Veranda Blend</span>
+                    </div>
+                </div>
+            </div></div>
+            <div class="menu-container" id="cold-cups">
+            <h1>Cold Cups</h1>`
+           <div class="item-list">
+                <h2>Cold Cups</h2>
+                <div class="cold">
+                
+                    <div class="purple-recycled-glass-cold-cup-16fl">
+                        <img src="../Images/cold_cup1.jpeg" alt="Purple Recycled Glass Cold Cup">
+                        <span>Purple Recycled Glass Cold Cup</span>
+                    </div>
+                    <div class="purple-recycled-stainless-steel">
+                        <img src="../Images/cold_cup2.jpeg" alt="Purple Recycled Stainless - Steel Cold Cup">
+                        <span>Purple Recycled Stainless - Steel Cold Cup </span>
+                    </div></div>
+                </div>
+            </div>
+        </div></div>
+    
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container3">
+    <div class="divA">
+        <h2>About Us</h2>
+<ul>
+    <li><a href="#our_company">Our Company</a></li>
+    <li><a href="#our_coffee">Our Coffee</a></li>
+    <li><a href="#about_startbucks">About Startbucks</a></li>
+    <li><a href="#starbucks_achieve">Starbucks Archive</a></li>
+    <li><a href="#investor_relationships">Investor Relations</a></li>
+    <li><a href="#customer_services">Customer Service</a></li>
+    <li><a href="#contact_us">Contact Us</a></li>
+</ul>
+</div>
+<div class="divB">
+    <h2>Careers</h2>
+    <ul>
+    <li><a href="#culture_and_values">Culture And Values</a></li>
+    <li><a href="#inclusion">Inclusion, Diversity, & Belonging</a></li>
+    <li><a href="#college">College Achievement Plan</a></li>
+    <li><a href="#alumni">Alumni Community</a></li>
+    <li><a href="#u.s">U.S. Careers</a></li>
+    </ul>
+</div>
+<div class="divC">
+    <h2>Social Impact</h2>
+    <ul>
+    <li><a href="#comminicate">Communicate</a></li>
+    <li><a href="#starbucks_foundation">Startbucks Foundation</a></li>
+    <li><a href="#sustainability">Sustainability</a></li>
+    <li><a href="#environmental">Environmental and Social Impact Reporting</a></li>
+  
+</ul>
+</div>
+<div class="divD">
+    <h2>Fo Business Partners</h2>
+    <ul>
+        <li><a href="#landloard">Landlord Support Center</a></li>
+        <li><a href="#suppliers">Suppliers</a></li>
+        <li><a href="#corporate">Corporate Git Card Sales</a></li>
+        <li><a href="#office">Office and Food Service Coffee</a></li>
+        
+    </ul>
+</div>
+ </div>
+   </div>
+<div class="footer">
+    <a href="https://www.instagram.com/starbucks/"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+    <a href="https://www.facebook.com/Starbucks/"><i class="fa fa-facebook-f" style="font-size:36px"></i></a>
+    <a href="https://x.com/starbucks/?mx=2"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+    <a href="https://open.spotify.com/user/starbucks"><i class="fa fa-spotify" style="font-size:36px"></i></a>
+
+</div>
+    <script src="menu.js"></script>
+
+</body>
+</html>
